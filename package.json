@@ -12,6 +12,10 @@
   "keywords": [],
   "author": "Thomas Duboucher <thomas@duboucher.eu> (https://duboucher.eu/)",
   "license": "WTFPL",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/serianox/typescript-hello"
+  },
   "devDependencies": {
     "@types/chai": "^4.0.2",
     "@types/mocha": "^2.2.41",
