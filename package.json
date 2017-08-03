@@ -1,7 +1,7 @@
 {
   "name": "typescript-hello",
   "version": "0.1.0",
-  "description": "",
+  "description": " Hello World with npm/typescript ",
   "main": "dist/lib/index.js",
   "types": "dist/lib/index.ts.d",
   "scripts": {
@@ -10,8 +10,8 @@
     "test": "nyc --reporter=json mocha dist/test --ui tdd && nyc report && nyc report --reporter=html"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Thomas Duboucher <thomas@duboucher.eu> (https://duboucher.eu/)",
+  "license": "WTFPL",
   "devDependencies": {
     "@types/chai": "^4.0.2",
     "@types/mocha": "^2.2.41",
