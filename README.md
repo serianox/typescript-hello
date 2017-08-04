@@ -3,5 +3,5 @@
 
 Hello World with npm/typescript
 
-[travis-url]: http://travis-ci.org/Asana/typescript-starter
-[travis-image]: http://img.shields.io/travis/Asana/typescript-starter.svg?style=flat-square
+[travis-url]: https://travis-ci.org/serianox/typescript-hello
+[travis-image]: https://travis-ci.org/serianox/typescript-hello.svg
