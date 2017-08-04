@@ -1,4 +1,4 @@
-import {hello} from '../lib/index'
+import { hello } from '../lib/index'
 import { assert } from 'chai'
 
 suite('Functional', () => {
