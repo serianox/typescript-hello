@@ -7,7 +7,9 @@
   "scripts": {
     "build": "tsc",
     "doc": "typedoc --out ./doc --json ./doc/doc.json --theme default --module commonjs",
-    "test": "nyc --reporter=json mocha dist/test --ui tdd && nyc report && nyc report --reporter=html"
+    "test": "nyc --reporter=json mocha dist/test --ui tdd",
+    "posttest": "nyc report && nyc report --reporter=html",
+    "codecov": "codecov -f coverage/*.json"
   },
   "keywords": [],
   "author": "Thomas Duboucher <thomas@duboucher.eu> (https://duboucher.eu/)",
@@ -16,10 +18,14 @@
     "type": "git",
     "url": "https://github.com/serianox/typescript-hello"
   },
+  "bugs": {
+    "url": "https://github.com/serianox/typescript-hello/issues"
+  },
   "devDependencies": {
     "@types/chai": "^4.0.2",
     "@types/mocha": "^2.2.41",
     "chai": "^4.1.0",
+    "codecov": "^2.3.0",
     "mocha": "^3.5.0",
     "nyc": "^11.1.0",
     "typedoc": "^0.7.1",
