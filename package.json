@@ -5,6 +5,7 @@
   "main": "dist/lib/index.js",
   "types": "dist/lib/index.ts.d",
   "scripts": {
+    "prebuild": "tslint -c tslint.json -p tsconfig.json",
     "build": "tsc",
     "doc": "typedoc --out ./doc --json ./doc/doc.json --theme default --module commonjs",
     "test": "nyc --reporter=json mocha dist/test --ui tdd",
@@ -28,6 +29,7 @@
     "codecov": "^2.3.0",
     "mocha": "^3.5.0",
     "nyc": "^11.1.0",
+    "tslint": "^5.5.0",
     "typedoc": "^0.8.0",
     "typescript": "^2.4.1"
   }

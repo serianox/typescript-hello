@@ -1,6 +1,6 @@
 /**
+ * Hello World!
+ *
  * @return `"Hello world!"`
  */
-export function hello(): string {
-    return "Hello world!"
-}
+export const hello: () => string = (): string => "Hello world!";
