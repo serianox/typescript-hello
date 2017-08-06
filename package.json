@@ -1,5 +1,5 @@
 {
-  "name": "typescript-hello",
+  "name": "@serianox/typescript-hello",
   "version": "0.1.0",
   "description": " Hello World with npm/typescript ",
   "main": "dist/lib/index.js",
@@ -17,7 +17,7 @@
   "license": "WTFPL",
   "repository": {
     "type": "git",
-    "url": "https://github.com/serianox/typescript-hello"
+    "url": "https://github.com/serianox/typescript-hello.git"
   },
   "bugs": {
     "url": "https://github.com/serianox/typescript-hello/issues"
