@@ -5,7 +5,7 @@ ci: lint build test cov-cli codecov
 commit: lint build test cov-cli cov-html doc
 
 .PHONY: codecov
-codecov: cov-cli
+codecov: test
 	codecov -f coverage/*.json
 
 .PHONY: cov-html
