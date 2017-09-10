@@ -5,12 +5,9 @@
   "main": "dist/lib/index.js",
   "types": "dist/lib/index.ts.d",
   "scripts": {
-    "prebuild": "tslint -c tslint.json -p tsconfig.json",
-    "build": "tsc",
-    "doc": "typedoc --out ./doc --json ./doc/doc.json --theme default --module commonjs",
-    "test": "nyc --reporter=json mocha dist/test --ui tdd",
-    "posttest": "nyc report && nyc report --reporter=html",
-    "codecov": "codecov -f coverage/*.json"
+    "build": "npm run make -- build",
+    "test": "npm run make -- test",
+    "make": "make -j"
   },
   "keywords": [],
   "author": "Thomas Duboucher <thomas@duboucher.eu> (https://duboucher.eu/)",

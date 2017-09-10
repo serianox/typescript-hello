@@ -3,9 +3,7 @@ sudo: false
 node_js:
   - "node"
 script:
-  - npm run build
-  - npm run test
-  - npm run codecov
+  - npm run make -- ci
 cache:
   yarn : true
   directories:
