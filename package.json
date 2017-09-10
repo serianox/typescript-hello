@@ -23,14 +23,14 @@
     "url": "https://github.com/serianox/typescript-hello/issues"
   },
   "devDependencies": {
-    "@types/chai": "^4.0.2",
-    "@types/mocha": "^2.2.41",
-    "chai": "^4.1.1",
+    "@types/chai": "^4.0.4",
+    "@types/mocha": "^2.2.43",
+    "chai": "^4.1.2",
     "codecov": "^2.3.0",
-    "mocha": "^3.5.0",
-    "nyc": "^11.1.0",
-    "tslint": "^5.5.0",
+    "mocha": "^3.5.1",
+    "nyc": "^11.2.1",
+    "tslint": "^5.7.0",
     "typedoc": "^0.8.0",
-    "typescript": "^2.4.1"
+    "typescript": "^2.5.2"
   }
 }
