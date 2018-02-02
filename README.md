@@ -1,7 +1,8 @@
 # typescript-hello
-[![Build Status][travis-image]][travis-url] [![Coverage][codecov-image]][codecov-url] [![Dependencies][david-image]][david-url] [![Dev Dependencies][david-dev-image]][david-dev-url]
-
-Hello World with npm/typescript
+[![Build Status][travis-image]][travis-url]
+[![Issues Coverage][codecov-image]][codecov-url]
+[![Test Coverage][codeclimate-image]][codeclimate-url]
+[![Dependency Status][dependencyci-image]][dependencyci-url]
 
 [travis-url]: https://travis-ci.org/serianox/typescript-hello
 [travis-image]: https://travis-ci.org/serianox/typescript-hello.svg
@@ -9,8 +10,8 @@ Hello World with npm/typescript
 [codecov-url]: https://codecov.io/gh/serianox/typescript-hello
 [codecov-image]: https://codecov.io/gh/serianox/typescript-hello/branch/master/graph/badge.svg
 
-[david-url]: https://david-dm.org/serianox/typescript-hello
-[david-image]: https://david-dm.org/serianox/typescript-hello.svg
+[codeclimate-url]: https://codeclimate.com/github/serianox/typescript-hello/issues
+[codeclimate-image]: https://img.shields.io/codeclimate/issues/github/serianox/typescript-hello.svg
 
-[david-dev-url]: https://david-dm.org/serianox/typescript-hello?type=dev
-[david-dev-image]: https://david-dm.org/serianox/typescript-hello/dev-status.svg
+[dependencyci-url]: https://dependencyci.com/github/serianox/typescript-hello
+[dependencyci-image]: https://dependencyci.com/github/serianox/typescript-hello/badge

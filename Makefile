@@ -1,6 +1,7 @@
 .PHONY: ci
-ci: lint build test cov-cli codecov
+ci: lint style build test cov-cli codecov doc
 
+.DEFAULT_GOAL := commit
 .PHONY: commit
 commit: lint build test cov-cli cov-html doc
 
@@ -18,7 +19,7 @@ cov-cli: test
 
 .PHONY: test
 test: build
-	nyc --reporter=json mocha dist/test --ui tdd
+	nyc --reporter=json mocha --require source-map-support/register --ui tdd --use_strict dist/test/**/*.test.js || true
 
 .PHONY: build
 build: transpile
@@ -27,9 +28,17 @@ build: transpile
 transpile:
 	tsc
 
+.PHONY: fmt
+fmt:
+	tsfmt --replace
+
+.PHONY: style
+style:
+	tsfmt --verify || true
+
 .PHONY: lint
 lint:
-	tslint -c tslint.json -p tsconfig.json
+	tslint -c tslint.json -p tsconfig.json || true
 
 .PHONY: doc
 doc:
