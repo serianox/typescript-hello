@@ -3,8 +3,7 @@ sudo: false
 node_js:
   - "node"
 script:
-  - yarn run make -- ci
+  - make ci
 cache:
-  yarn : true
   directories:
     - "node_modules"
