@@ -20,7 +20,7 @@
     "@types/chai": "^4.2.11",
     "@types/mocha": "^7.0.2",
     "chai": "^4.2.0",
-    "codecov": "^3.6.5",
+    "codecov": "^3.7.1",
     "mocha": "^7.1.1",
     "nyc": "^15.0.0",
     "source-map-support": "^0.5.16",
