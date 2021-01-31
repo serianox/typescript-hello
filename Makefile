@@ -3,43 +3,43 @@ ci: lint style build test cov-cli codecov doc
 
 .DEFAULT_GOAL := commit
 .PHONY: commit
-commit: lint build test cov-cli cov-html doc
+commit: style lint build test cov-cli cov-html doc
 
 .PHONY: codecov
 codecov: test
-	npx codecov -f coverage/*.json
+	yarn codecov -f coverage/*.json
 
 .PHONY: cov-html
 cov-html: test
-	npx nyc report --reporter=html
+	yarn nyc report --reporter=html
 
 .PHONY: cov-cli
 cov-cli: test
-	npx nyc report
+	yarn nyc report
 
 .PHONY: test
 test: build
-	npx nyc --reporter=json mocha --require source-map-support/register --ui tdd --use_strict dist/test/**/*.test.js || true
+	yarn nyc --reporter=json mocha --require source-map-support/register --ui tdd --use_strict dist/test/**/*.test.js
 
 .PHONY: build
 build: transpile
 
 .PHONY: transpile
 transpile:
-	npx tsc
+	yarn tsc
 
-.PHONY: fmt
-fmt:
-	npx tsfmt --replace
+.PHONY: format
+format:
+	yarn prettier --write ./lib ./test
 
 .PHONY: style
 style:
-	npx tsfmt --verify || true
+	yarn prettier --check ./lib ./test
 
 .PHONY: lint
 lint:
-	npx tslint -c tslint.json -p tsconfig.json || true
+	yarn eslint . --ext .ts --fix
 
 .PHONY: doc
 doc:
-	npx typedoc --out ./doc --json ./doc/doc.json --theme default --module commonjs
+	yarn typedoc ./lib/index.ts --out ./dist/doc --json ./dist/doc/doc.json --theme minimal --name "Hello World!" --includeVersion
